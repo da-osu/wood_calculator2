@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9E3DF"
+    tools:context=".MainCal2">
+
+
+    <EditText
+        android:id="@+id/etnum"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:backgroundTint="#ED3232"
+        android:ems="10"
+        android:hint="numbers of wood"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <EditText
+        android:id="@+id/etprice"
+        android:layout_width="194dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#ED3232"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etnum"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/etnum"
+        app:layout_constraintTop_toBottomOf="@+id/etnum"
+        app:layout_constraintVertical_bias="0.086" />
+
+
+    <EditText
+        android:id="@+id/etexpens"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:backgroundTint="#ED3232"
+        android:ems="10"
+        android:hint="expenses"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etprice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etprice"
+        app:layout_constraintTop_toBottomOf="@+id/etprice"
+        app:layout_constraintVertical_bias="0.12" />
+
+
+    <TextView
+        android:id="@+id/maincalresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#2ED850"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etexpens"
+        app:layout_constraintStart_toStartOf="@+id/etexpens"
+        app:layout_constraintTop_toBottomOf="@+id/etexpens"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/priceresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#B73232"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/maincalresult"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/maincalresult"
+        app:layout_constraintTop_toBottomOf="@+id/maincalresult"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/balanceresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#0860F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/priceresult"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/priceresult"
+        app:layout_constraintTop_toBottomOf="@+id/priceresult"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:cornerRadius="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/balanceresult"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/balanceresult"
+        app:layout_constraintTop_toBottomOf="@+id/balanceresult"
+        app:layout_constraintVertical_bias="0.12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

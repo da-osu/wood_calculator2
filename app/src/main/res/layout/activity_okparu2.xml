@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9E3DF"
+    tools:context=".OkparuActivity2">
+
+    <EditText
+        android:id="@+id/etokpanum"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:backgroundTint="#ED3232"
+        android:ems="10"
+        android:hint="numbers of wood"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <EditText
+        android:id="@+id/etokpaprice"
+        android:layout_width="203dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="price"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etokpanum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etokpanum"
+        app:layout_constraintTop_toBottomOf="@+id/etokpanum"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etokparukparunum"
+        android:layout_width="203dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="kparukparu"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etokpaprice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etokpaprice"
+        app:layout_constraintTop_toBottomOf="@+id/etokpaprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etokparukparuprice"
+        android:layout_width="203dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="price of 0kparukparu"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etokparukparunum"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etokparukparunum"
+        app:layout_constraintTop_toBottomOf="@+id/etokparukparunum"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/etexpensokpa"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:backgroundTint="#ED3232"
+        android:ems="10"
+        android:hint="expenses/boat"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etokparukparuprice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etokparukparuprice"
+        app:layout_constraintTop_toBottomOf="@+id/etokparukparuprice"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etexpensokpa"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/etexpensokpa"
+        app:layout_constraintTop_toBottomOf="@+id/etexpensokpa"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/okpabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="solve"
+        app:cornerRadius="70px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#DD1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.147" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

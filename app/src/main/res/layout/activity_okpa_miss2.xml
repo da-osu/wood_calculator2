@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#C9E3DF"
+    android:layout_height="match_parent"
+    tools:context=".okpaMissActivity2">
+
+
+    <EditText
+        android:id="@+id/omnum"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:ems="8"
+        android:hint="numbers of wood"
+        android:inputType="number"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/ommiss"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:ems="8"
+        android:hint="miss number"
+        android:inputType="number"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omnum"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/omnum"
+        app:layout_constraintTop_toBottomOf="@+id/omnum"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/omprice"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:ems="8"
+        android:hint="price"
+        android:inputType="number"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ommiss"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ommiss"
+        app:layout_constraintTop_toBottomOf="@+id/ommiss"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/omokpanum"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:ems="8"
+        android:hint="numbers of okpa"
+        android:inputType="number"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omprice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/omprice"
+        app:layout_constraintTop_toBottomOf="@+id/omprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/omokpaprice"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:ems="8"
+        android:hint="price of okpa"
+        android:inputType="number"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omokpanum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/omokpanum"
+        app:layout_constraintTop_toBottomOf="@+id/omokpanum"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/omexpens"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:ems="8"
+        android:hint="expense/boat"
+        android:inputType="number"
+        android:backgroundTint="#ED3232"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omokpaprice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/omokpaprice"
+        app:layout_constraintTop_toBottomOf="@+id/omokpaprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/ombtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:cornerRadius="70px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED3232"
+        android:text=""
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omexpens"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/omexpens"
+        app:layout_constraintTop_toBottomOf="@+id/omexpens"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED3232"
+        android:text=""
+        android:textColor="#E32121"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ombtn"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED3232"
+        android:text=""
+        android:textColor="#4DE027"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED3232"
+        android:text=""
+        android:textColor="@color/teal_200"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.055" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
